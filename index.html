@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambush Check on Auto Section</title>
+  <link rel="stylesheet" href="ambstyles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>Ambush Check on Auto Section</h2>
+    <form id="ambushCheckForm" onsubmit="return validateForm()">
+      <label for="dateTime">Date and Time:</label>
+      <input type="datetime-local" id="dateTime" name="dateTime" required>
+      <label for="cliName">CLI Name:</label>
+      <select id="cliName" name="cliName" required>
+        <option value="" disabled selected>Select CLI Name</option>
+        <option value="CLI1">CLI1</option>
+        <option value="CLI2">CLI2</option>
+        <option value="CLI3">CLI3</option>
+      </select>
+
+      <label for="trainNo">Train No:</label>
+      <input type="text" id="trainNo" name="trainNo" required>
+
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="oheMastNo">OHE Mast No:</label>
+      <input type="text" id="oheMastNo" name="oheMastNo" required>
+
+      <label for="observation">Observation:</label>
+      <select id="observation" name="observation" required>
+        <option value="" disabled selected>Select Observation</option>
+        <option value="vigilant">Vigilant</option>
+        <option value="non-vigilant">Non-Vigilant</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <script src="ambscript.js"></script>
+</body>
+</html>
