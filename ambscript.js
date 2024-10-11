@@ -13,8 +13,8 @@ function validateForm() {
 
    return true;
 }
-const scriptURL = 'https://script.google.com/macros/s/AKfycbyU86Ya4C8w5x3Oc3Tg_Xz2OBbX8wyUzn5ZB4ihNl8cwe68cRJtZgqpt1Kmo29blPu2/exec';
-const form = document.forms['mobileCheckForm'];
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwfYdmPeRdmF7psJWDNL6lb9FNN-NsJlWorf4sY4RzmxnUgfgawRhwIeXdR_uoE4s_J/exec';
+const form = document.forms['ambushCheckForm'];
 const submitButton = form.querySelector('button[type="submit"]');  // Select the submit button
 
 form.addEventListener('submit', async e => {
